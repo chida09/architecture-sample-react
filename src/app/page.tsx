@@ -59,7 +59,8 @@ export default function Home() {
               rel="noopener noreferrer"
           >
             <h2>
-              Learn <span>-&gt;</span>
+              Learn
+              {/*Learn <span>-&gt;</span>*/}
             </h2>
             <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
           </a>
@@ -90,6 +91,12 @@ export default function Home() {
             </p>
           </a>
         </div>
+
+        <ul>
+          <li>test 1</li>
+          <li>test 2</li>
+          <li>test 3</li>
+        </ul>
       </main>
   )
 }

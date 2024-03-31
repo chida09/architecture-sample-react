@@ -9,8 +9,23 @@
 ## Testing
 * Install
   * https://nextjs.org/docs/pages/building-your-application/testing/jest
-  * jest-environment-jsdom
-    * JSDOMは、Node.js環境でHTMLとDOMをエミュレートするためのJavaScriptの実装であり、ブラウザ環境を模倣する
-    * これにより、ブラウザがない環境でも、DOMを使った操作やブラウザ特有のAPIを利用したテストが可能になる
-  * @testing-library
-    * https://reffect.co.jp/react/react-test
+* jest-environment-jsdom
+  * JSDOMは、Node.js環境でHTMLとDOMをエミュレートするためのJavaScriptの実装であり、ブラウザ環境を模倣する
+  * これにより、ブラウザがない環境でも、DOMを使った操作やブラウザ特有のAPIを利用したテストが可能になる
+* @testing-library
+  * https://reffect.co.jp/react/react-test
+  * デバッグ: `screen.debug(element)`
+* @testing-library/react
+  * コンポーネントの描写と要素を見つけるためのQueryが含まれている
+* @testing-library/user-event
+  * Clickなどのユーザイベントに利用される
+* @testing-library/jest-dom
+  * Jestの追加のmatchers関数が含まれている
+* References
+  * [ReactでTesting Library/Jestを使ってテストを学ぼう](https://reffect.co.jp/react/react-test)
+
+## Other
+* [📚React Libraries You Should Use In 2024](https://reedbarger.medium.com/react-libraries-you-should-use-in-2024-4a9fd422a1bd)
+  * client-rendered -> Vite
+  * server-rendered -> Next.js
+  * static sites -> Remix
