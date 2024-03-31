@@ -4,7 +4,7 @@ import { render, screen } from '@testing-library/react'
 
 describe('Page', () => {
   it('renders a heading', () => {
-    render(<Page />)
+    const { asFragment } = render(<Page />)
 
     // h1タグ
     const heading1 = screen.getByRole('heading', { level: 1 })
@@ -15,9 +15,13 @@ describe('Page', () => {
 
     const listElements = screen.getAllByRole('listitem')
 
+    // heading tag
     expect(heading1).toBeInTheDocument()
     expect(text).toBeInTheDocument()
     expect(heading2).toBeInTheDocument()
+    // list tag
     expect(listElements).toHaveLength(3)
+    // snapshot test
+    expect(asFragment()).toMatchSnapshot()
   })
 })
