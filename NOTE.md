@@ -29,6 +29,10 @@
   * https://jestjs.io/ja/docs/snapshot-testing
   * https://nextjs.org/docs/app/building-your-application/testing/jest#creating-your-first-test
 
+## Emotion
+* [emotion](https://emotion.sh/docs/introduction)
+  * CSS-in-JSライブラリ
+
 ## Other
 * [📚React Libraries You Should Use In 2024](https://reedbarger.medium.com/react-libraries-you-should-use-in-2024-4a9fd422a1bd)
   * client-rendered -> Vite

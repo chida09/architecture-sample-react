@@ -1,10 +1,26 @@
+// NOTE: https://zenn.dev/gekitenius/articles/approuter_with_emotion_202401
+'use client'
+
 import Image from 'next/image'
 import styles from './page.module.css'
+import styled from "@emotion/styled";
+
+// emotion/styledの利用
+const Description = styled.div`
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    font-size: 0.85rem;
+    max-width: var(--max-width);
+    width: 100%;
+    z-index: 2;
+    font-family: var(--font-mono);
+`
 
 export default function Home() {
   return (
       <main className={styles.main}>
-        <div className={styles.description}>
+        <Description>
           <p>
             Get started by editing&nbsp;
             <code className={styles.code}>src/app/page.tsx</code>
@@ -26,7 +42,7 @@ export default function Home() {
               />
             </a>
           </div>
-        </div>
+        </Description>
 
         <div className={styles.center}>
           <Image
